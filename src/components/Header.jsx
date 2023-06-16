@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -11,15 +12,16 @@ const Header = () => {
 
           <nav id="navbar" className="navbar">
             <ul>
-              <li><a className="active" href="index.html"><span>Home</span> </a></li>
-              <li><a className="nav-link scrollto" href="hotels.html"><span>Hotel</span> </a></li>
-              <li><a className="nav-link scrollto" href="listing.html">Packages</a></li>
-              <li><a className="nav-link scrollto " href="flights.html">Flights</a></li>
-              <li><a className="nav-link scrollto" href="umrah.html">Umrah Packages</a></li>
-              <li><a className="nav-link scrollto" href="aboutUs.html">About</a></li>
-              <li><a className="getstarted scrollto" href="login.html">Login / SignUp</a></li>
+              <li><Link to="/" className="active"><span>Home</span></Link></li>
+              <li><Link to="" className="nav-link scrollto"><span>Hotel</span></Link></li>
+              <li><Link to="" className="nav-link scrollto">Packages</Link></li>
+              <li><Link to="" className="nav-link scrollto">Flights</Link></li>
+              <li><Link to="" className="nav-link scrollto">Umrah Packages</Link></li>
+              <li><Link to="/aboutus" className="nav-link scrollto">About</Link></li>
+              <li><Link to="/login" className="getstarted scrollto">Login / SignUp</Link></li>
             </ul>
             <i className="bi bi-list mobile-nav-toggle"></i>
+            {/* <BiList className="mobile-nav-toggle" /> */}
           </nav>
 
         </div>
