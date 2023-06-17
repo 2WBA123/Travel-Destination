@@ -5,6 +5,7 @@ import Header from './components/Header';
 import AboutPage from './pages/AboutPage/AboutPage';
 import LoginSection from './pages/Login/LoginPage';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import Home from './pages/HomePage/Home';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <Router >
       <Header />
         <Routes>
-          <Route path='/' element={<LoginSection />} />
+          <Route path='/' element={<Home/>}/>
+          <Route path='/login' element={<LoginSection />} />
           <Route path='/aboutus' element={<AboutPage />} />
         </Routes>
         <Footer />
