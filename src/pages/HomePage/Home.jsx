@@ -6,6 +6,8 @@ import OurClients from './src/OurClients/OurClients'
 import AboutSection from './src/About/About'
 import FavoritePlaces from '../../components/OurFavPlaces/OurFavPlaces'
 import AboutUsSection from './src/MoreAboutUs/MoreAboutUs'
+import { items } from '../../constants/CardsConstants'
+import BookingCard from '../../components/BookingCard'
 
 function Home() {
   return (
@@ -14,6 +16,7 @@ function Home() {
     <WhyUsSection/>
     <OurClients/>
     <AboutSection/>
+    <BookingCard items={items} heading= "WHY BOOK WITH US?"/>
     <FavoritePlaces/>
     <AboutUsSection/>
     </>
