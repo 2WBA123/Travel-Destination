@@ -97,3 +97,11 @@ export const stylePadding = {
       name: "Graphic Design"
     },
   ]
+
+  export const FooterSocialLinks = [
+    { icon: "bx bxl-twitter", path: "/twitter" },
+    { icon: "bx bxl-facebook", path: "/facebook" },
+    { icon: "bx bxl-instagram", path: "/instagram" },
+    { icon: "bx bxl-skype", path: "/skype" },
+    { icon: "bx bxl-linkedin", path: "/linkedin" },
+  ]

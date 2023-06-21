@@ -1,6 +1,7 @@
 import React from "react";
 import {
   FooterServicesLinks,
+  FooterSocialLinks,
   FooterUsefulLinks,
 } from "../constants/HeaderFooterConstants";
 import { Link } from "react-router-dom";
@@ -75,21 +76,11 @@ const Footer = () => {
           <div className="credits"></div>
         </div>
         <div className="social-links text-center text-md-right pt-3 pt-md-0">
-          <a href="#" className="twitter">
-            <i className="bx bxl-twitter"></i>
-          </a>
-          <a href="#" className="facebook">
-            <i className="bx bxl-facebook"></i>
-          </a>
-          <a href="#" className="instagram">
-            <i className="bx bxl-instagram"></i>
-          </a>
-          <a href="#" className="google-plus">
-            <i className="bx bxl-skype"></i>
-          </a>
-          <a href="#" className="linkedin">
-            <i className="bx bxl-linkedin"></i>
-          </a>
+          {FooterSocialLinks.map((item, index) => (
+            <Link to={item.path} key={index}>
+              <i className={item.icon}></i>
+            </Link>
+          ))}
         </div>
       </div>
     </footer>
