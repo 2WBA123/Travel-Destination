@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const LoginSection = () => {
     const [email, setEmail] = useState('');
@@ -64,9 +65,12 @@ const LoginSection = () => {
                                     <button type="submit">Login</button>
                                 </div>
                                 <br />
+                                <Link to={'/signup'}>
                                 <p>
-                                    Don't have an account? <a href="signup.html">Create one!</a>
+                                    Don't have an account? 
                                 </p>
+                                </Link>
+                                
                             </form>
                             <p className="text-center mt-4">or Continue with</p>
                             <div className="row">

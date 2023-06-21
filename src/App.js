@@ -7,8 +7,9 @@ import LoginSection from './pages/Login/LoginPage';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
 import Home from './pages/HomePage/Home';
-
+import NewSignup from './pages/SignUpPage/NewSignupPage'
 import Umrah from './pages/UmrahPackage/Umrah';
+import SignUpPage from './pages/SignUpPage/SignUpPage';
 
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/login' element={<LoginSection />} />
+          {/* <Route path='/signup' element={<SignUpPage/>} /> */}
+          <Route path='/signup' element={<NewSignup/>} />
+
           <Route path='/aboutus' element={<AboutPage />} />
           <Route path='/umrah' element={<Umrah />} />
 
