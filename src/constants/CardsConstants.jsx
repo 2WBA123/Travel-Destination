@@ -50,3 +50,55 @@ export const items = [
 
         // Add more item objects as needed
     ];
+
+
+   export const ourFavCardData = [
+    {
+        id: 1,
+        colSize: '4',
+        imgSrc: '/img/countries/1.jpg',
+        title: 'Amsterdam',
+        ratings: [
+          'fa-solid fa-star',
+          'fa-solid fa-star',
+          'fa-solid fa-star',
+          'fa-solid fa-star',
+          'fa-solid fa-star'
+        ],
+        price: '$1870/ Per Person',
+        duration: '15 Days',
+        location: 'Pakistan, Amsterdam'
+      },
+      {
+        id: 2,
+        colSize: '4',
+        imgSrc: '/img/countries/2.jpg',
+        title: 'Key West',
+        ratings: [
+          'fa-solid fa-star',
+          'fa-solid fa-star',
+          'fa-solid fa-star',
+          'fa-solid fa-star',
+          'fa-regular fa-star'
+        ],
+        price: '$1870/ Per Person',
+        duration: '15 Days',
+        location: 'Pakistan, Key West'
+      },
+      {
+        id: 3,
+        colSize: '4',
+        imgSrc: '/img/countries/4.jpg',
+        title: 'New York City',
+        ratings: [
+          'fa-solid fa-star',
+          'fa-solid fa-star',
+          'fa-solid fa-star',
+          'fa-solid fa-star',
+          'fa-solid fa-star-half-stroke'
+        ],
+        price: '$1870/ Per Person',
+        duration: '15 Days',
+        location: 'Pakistan, NYC'
+      }
+      ];
