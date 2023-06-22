@@ -10,6 +10,7 @@ import Home from './pages/HomePage/Home';
 import NewSignup from './pages/SignUpPage/NewSignupPage'
 import Umrah from './pages/UmrahPackage/Umrah';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
+import HotelsPage from './pages/HotelsPage/HotelsPage';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/login' element={<LoginSection />} />
           {/* <Route path='/signup' element={<SignUpPage/>} /> */}
           <Route path='/signup' element={<NewSignup/>} />
+          <Route path='/hotel' element={<HotelsPage/>} />
 
           <Route path='/aboutus' element={<AboutPage />} />
           <Route path='/umrah' element={<Umrah />} />
