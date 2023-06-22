@@ -10,7 +10,7 @@ export const stylePadding = {
       name: "Home"
     },
     {
-      to : '',
+      to : '/hotel',
       className:"nav-link scrollto",
       name: "Hotel"
     },
