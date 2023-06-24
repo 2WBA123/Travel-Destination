@@ -40,7 +40,7 @@ const WhyUsSection = () => {
                 >
                   <div className="icon-box mt-4 mt-xl-0">
                     {/* <BiCube /> */}
-                    <i class="bx bx-cube-alt"></i>
+                    <i className="bx bx-cube-alt"></i>
                     <h4>Memorable experiences</h4>
                     <p>
                       Excepteur sint occaecat cupidatat non proident, sunt in
@@ -54,7 +54,7 @@ const WhyUsSection = () => {
                   data-aos-delay="300"
                 >
                   <div className="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-images"></i>
+                    <i className="bx bx-images"></i>
                     <h4>Quality at our core</h4>
                     <p>
                       Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
@@ -68,7 +68,7 @@ const WhyUsSection = () => {
                   data-aos-delay="300"
                 >
                   <div className="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-images"></i>
+                    <i className="bx bx-images"></i>
                     <h4>Award-winning support</h4>
                     <p>
                       Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
