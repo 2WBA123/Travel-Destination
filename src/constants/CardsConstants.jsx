@@ -102,3 +102,12 @@ export const items = [
         location: 'Pakistan, NYC'
       }
       ];
+
+      export const ourClientImages = [
+        "/img/clients/client-1.png",
+        "/img/clients/client-2.png",
+        "/img/clients/client-3.png",
+        "/img/clients/client-4.png",
+        "/img/clients/client-4.png",
+        "/img/clients/client-6.png",
+      ];
