@@ -2,20 +2,35 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "../OurClients/OurClients.css";
+import { ourClientImages } from "../../../../constants/CardsConstants";
 
 function ClientsSection() {
   useEffect(() => {
     Aos.init();
   }, []);
 
-  const images = [
-    "/img/clients/client-1.png",
-    "/img/clients/client-2.png",
-    "/img/clients/client-3.png",
-    "/img/clients/client-4.png",
-    "/img/clients/client-4.png",
-    "/img/clients/client-6.png",
-  ];
+  const ImageMap = (reversed) => (
+   
+      <div className="marquee_container">
+          {[...Array(4)].map((_, index) => (
+              <React.Fragment key={`marquee1-${index}`}>
+                {reversed !== "reversed" ?
+                (ourClientImages.map((image, innerIndex) => (
+                  <div className="marqueeElement" key={`marquee1-${index}-${innerIndex}`}>
+                    <img src={image} className="img-fluid" alt="" />
+                  </div>
+                ))) : (
+                  ourClientImages.slice().reverse().map((image, innerIndex) => (
+                    <div className="marqueeElement" key={`marquee1-${index}-${innerIndex}`}>
+                      <img src={image} className="img-fluid" alt="" />
+                    </div>
+                  ))
+                ) }
+              </React.Fragment>
+            ))}
+          </div>
+  )
+
 
   return (
     <div className="container-fluid">
@@ -24,33 +39,13 @@ function ClientsSection() {
       </div>
       <section id="clients" className="clients mb-0">
         <div className="marquee_text">
-          <div className="marquee_container">
-          {[...Array(4)].map((_, index) => (
-              <React.Fragment key={`marquee1-${index}`}>
-                {images.map((image, innerIndex) => (
-                  <div className="marqueeElement" key={`marquee1-${index}-${innerIndex}`}>
-                    <img src={image} className="img-fluid" alt="" />
-                  </div>
-                ))}
-              </React.Fragment>
-            ))}
-          </div>
+          {ImageMap("not reversed")}
         </div>
       </section>
 
       <section id="clients" className="clients">
         <div className="marquee_text2">
-          <div className="marquee_container">
-          {[...Array(4)].map((_, index) => (
-              <React.Fragment key={`marquee1-${index}`}>
-                {images.slice().reverse().map((image, innerIndex) => (
-                  <div className="marqueeElement" key={`marquee1-${index}-${innerIndex}`}>
-                    <img src={image} className="img-fluid" alt="" />
-                  </div>
-                ))}
-              </React.Fragment>
-            ))}
-          </div>
+        {ImageMap("reversed")}
         </div>
       </section>
     </div>
