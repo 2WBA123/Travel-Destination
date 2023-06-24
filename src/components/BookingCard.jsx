@@ -11,7 +11,7 @@ function BookingCard({ items, heading }) {
           <div className="col-lg-12 d-flex align-items-stretch">
             <div className="row">
               {items.map((item, index) => (
-                <div className="col-lg-3 col-md-6 col-sm-12 col-12" data-aos="fade-up" data-aos-delay={100 + (index * 100)}>
+                <div key={index} className="col-lg-3 col-md-6 col-sm-12 col-12" data-aos="fade-up" data-aos-delay={100 + (index * 100)}>
                   <div className="card">
                     <div className="card-img">
                       <img src={item.imageSrc} alt="" className="img-fluid" />

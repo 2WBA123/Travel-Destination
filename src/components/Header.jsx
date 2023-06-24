@@ -15,7 +15,7 @@ const Header = () => {
           <nav id="navbar" className="navbar">
             <ul>
               {
-                HeaderLinks.map(({to, className, name}, index)=> <li><Link key={index} to={to} className={className}><span>{name}</span></Link></li>)
+                HeaderLinks.map(({to, className, name}, index)=> <li key={index} ><Link to={to} className={className}><span>{name}</span></Link></li>)
               }
             </ul>
             <i className="bi bi-list mobile-nav-toggle"></i>

@@ -30,8 +30,8 @@ const Footer = () => {
               <h4>Useful Links</h4>
               <ul>
                 {FooterUsefulLinks.map(({ className, to, name }, index) => (
-                  <li>
-                    <Link key={index} to={to} className={className}>
+                  <li key={index}>
+                    <Link to={to} className={className}>
                       <span>{name}</span>
                     </Link>
                   </li>
@@ -42,8 +42,8 @@ const Footer = () => {
               <h4>Our Services</h4>
               <ul>
                 {FooterServicesLinks.map(({ className, to, name }, index) => (
-                  <li>
-                    <Link key={index} to={to} className={className}>
+                  <li key={index}>
+                    <Link  to={to} className={className}>
                       <span>{name}</span>
                     </Link>
                   </li>
