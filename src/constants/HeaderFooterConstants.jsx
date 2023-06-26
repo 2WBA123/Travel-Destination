@@ -15,12 +15,12 @@ export const stylePadding = {
       name: "Hotel"
     },
     {
-      to : '',
+      to : '/packages',
       className:"nav-link scrollto",
       name: "Packages"
     },
     {
-      to : '',
+      to : '/flights',
       className:"nav-link scrollto",
       name: "Flights"
     },
