@@ -6,7 +6,7 @@ export const stylePadding = {
  export const HeaderLinks = [
     {
       to : '/',
-      className:"active",
+      className:"nav-link scrollto",
       name: "Home"
     },
     {
