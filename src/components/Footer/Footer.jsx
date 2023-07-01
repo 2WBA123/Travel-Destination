@@ -3,7 +3,7 @@ import {
   FooterServicesLinks,
   FooterSocialLinks,
   FooterUsefulLinks,
-} from "../constants/HeaderFooterConstants";
+} from "../../constants/HeaderFooterConstants";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

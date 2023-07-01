@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroSection from './src/HeroSection/HeroSection'
-import BookingCard from '../../components/BookingCard'
+import BookingCard from '../../components/BookingCard/BookingCard'
 import { items } from '../../constants/CardsConstants'
 import FavoritePlaces from '../../components/OurFavPlaces/OurFavPlaces'
 

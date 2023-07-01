@@ -1,5 +1,5 @@
 import React from 'react';
-import BookingCard from '../../components/BookingCard';
+import BookingCard from '../../components/BookingCard/BookingCard';
 import { items } from '../../constants/CardsConstants';
 
 function Umrah() {
