@@ -7,17 +7,9 @@ import {
   TRIP_DESCRIPTION,
   TRIP_TITLE,
 } from "../../../../constants/AboutUsConstants";
+import { AboutComponent } from "../../../../components/MoreAbout/MoreAbout";
 
 const AboutUsSection = () => {
-
-  const AboutComponent = ({ children, url }) => (
-    <div className="row content">
-      <div className="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-        <img src={url} className="more-about-img" alt="About Us" />
-      </div>
-      {children}
-    </div>
-  );
 
   return (
     <section id="about" className="about">
