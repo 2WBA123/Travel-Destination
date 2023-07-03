@@ -1,17 +1,20 @@
-import React from 'react';
-import BookingCard from '../../components/BookingCard/BookingCard';
-import { items } from '../../constants/CardsConstants';
+import React from "react";
+import { items } from "../../constants/CardsConstants";
+import UmrahBookingForm from "../../components/UmrahBookingForm/UmrahBookingForm";
+import BookingCard from "../../components/BookingCard/BookingCard";
+import ServicesSection from "./src/ServicesSection";
+import UmrahPackages from "./src/UmrahPackages";
 
 function Umrah() {
-
-
-    return (
-        <div>
-           
-            <BookingCard items={items} heading= "WHY BOOK WITH US?"/>
-            
-        </div>
-    );
+  return (
+    <>
+      <UmrahBookingForm />
+      <UmrahPackages/>
+      <ServicesSection/>
+      <BookingCard items={items} heading="WHY BOOK WITH US?" />
+      
+    </>
+  );
 }
 
 export default Umrah;
