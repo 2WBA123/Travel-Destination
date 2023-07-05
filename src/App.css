@@ -1722,12 +1722,6 @@ Book Now Page
   outline: none;
   border-radius: 10px;
 }
-.portfolio-details .portfolio-info .pay_btn {
-  display: flex;
-  flex-direction: column;
-  margin-top: 7px;
-  width: 100%;
-}
 .portfolio-details .portfolio-info .btn-pay {
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
@@ -4717,7 +4711,7 @@ Book Now Page
   display: flex;
   flex-direction: column;
   margin-top: 7px;
-  width: 70%;
+  width: 100%;
 }
 .portfolio-details .portfolio-info .btn-pay {
   font-family: "Poppins", sans-serif;
@@ -4774,29 +4768,6 @@ Book Now Page
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
-.btn-requestCall {
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid #009970;
-  color: #fff;
-  background: #009970;
-  width: 100%;
-}
-
-.btn-requestCall:hover {
-  background: #fff;
-  border: 2px solid #009970;
-  color: #009970;
-}
-
 /*///////////////////////////////////////////////////////////////////////////*/
 
 .services .card {
