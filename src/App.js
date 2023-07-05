@@ -13,6 +13,7 @@ import SignUpPage from "./pages/SignUpPage/SignUpPage";
 import HotelsPage from "./pages/HotelsPage/HotelsPage";
 import PackagePage from "./pages/PackagePage/PackagePage";
 import FlightPage from "./pages/FlightsPage/FlightPage";
+import CheckAvaibilityPage from "./pages/CheckAvaibilityPage/CheckAvaibilityPage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/flights" element={<FlightPage />} />
           <Route path="/aboutus" element={<AboutPage />} />
           <Route path="/umrah" element={<Umrah />} />
+          <Route path="/package-availability" element={<CheckAvaibilityPage />} />
         </Routes>
         <Footer />
       </Router>

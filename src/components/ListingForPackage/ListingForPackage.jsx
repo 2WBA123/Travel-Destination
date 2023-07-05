@@ -1,13 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 // Component for the individual listing
 const Listing = () => {
+  const navigate = useNavigate()
   const openListing = () => {
     // Functionality for opening a listing
   };
 
   return (
-    <div className="col-xl-12 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+    <div className="col-xl-12 align-items-stretch" data-aos="zoom-in" data-aos-delay="100" onClick={()=>navigate("/package-availability")}>
       <div className="icon-box mt-4 mb-4 mt-xl-0 d-flex" onClick={openListing}>
         <div className="col-lg-4 col-12  list_details_img">
           <img src="img/listing-images/4.jpg" style={{ height: '270px' }} alt="Listing Image" />
