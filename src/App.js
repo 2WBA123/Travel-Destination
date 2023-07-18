@@ -14,6 +14,8 @@ import HotelsPage from "./pages/HotelsPage/HotelsPage";
 import PackagePage from "./pages/PackagePage/PackagePage";
 import FlightPage from "./pages/FlightsPage/FlightPage";
 import CheckAvaibilityPage from "./pages/CheckAvaibilityPage/CheckAvaibilityPage";
+import PayNow from "./components/PayNow/PayNow";
+
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
           <Route path="/aboutus" element={<AboutPage />} />
           <Route path="/umrah" element={<Umrah />} />
           <Route path="/package-availability" element={<CheckAvaibilityPage />} />
+          <Route path="/PayNow" element={<PayNow />} />
+
         </Routes>
         <Footer />
       </Router>
