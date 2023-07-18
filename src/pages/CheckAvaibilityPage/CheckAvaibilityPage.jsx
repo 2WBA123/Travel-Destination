@@ -1,8 +1,13 @@
 import React, { useEffect } from "react";
 import Swiper from "swiper";
 import Sidebar from "../../components/SideBar/SideBar";
+import { useNavigate } from "react-router-dom";
+import OverviewParagraphs from "../../components/OverviewParagraphs/OverviewParagraphs";
 
 function CheckAvaibilityPage(e) {
+
+  const Navigate = useNavigate()
+
   function toggleAvailability() {
     var spinner = document.getElementById("loadingSpinner");
     var accordion = document.getElementById("availabilityAccordion");
@@ -223,12 +228,12 @@ function CheckAvaibilityPage(e) {
                         </h4>
                         <p>Total Price</p>
                         <div className="checkAvailbility_payBtns">
-                          <a
-                            href="payNow.html"
+                          <button
+                            onClick={()=> Navigate('/PayNow')}
                             className="btn_pay_checkAvailibility"
                           >
                             Pay Now
-                          </a>
+                          </button>
                           <a
                             href="bookCallBack.html"
                             className="btn_pay_checkAvailibility"
@@ -239,97 +244,7 @@ function CheckAvaibilityPage(e) {
                       </div>
                     </div>
                     {/* check Availibility Accordin ends */}
-                    <h3>Overview</h3>
-                    <p>
-                      Cruising the canals of Amsterdam is a must for first-time
-                      visitors to the city. This family-friendly cruise provides
-                      a personalized experience with a small boat and a maximum
-                      of 20 passengers on-board. Get to know each other as you
-                      sip drinks, tuck into snacks, and enjoy entertaining
-                      commentary from Captain Jack. Cruise around the
-                      UNESCO-listed canal ring, spot landmarks including the
-                      Rijksmuseum and the Anne Frank House, and hear fun facts
-                      and stories about Amsterdam as you discover the city.
-                    </p>
-                    <ul>
-                      <li>
-                        Fantastic views as you cruise Amsterdam’s famous canals
-                      </li>
-                      <li>
-                        Fantastic views as you cruise Amsterdam’s famous canals
-                      </li>
-                      <li>
-                        Fantastic views as you cruise Amsterdam’s famous canals
-                      </li>
-                      <li>
-                        Fantastic views as you cruise Amsterdam’s famous canals
-                      </li>
-                      <li>
-                        Fantastic views as you cruise Amsterdam’s famous canals
-                      </li>
-                    </ul>
-                    <hr />
-
-                    <h3>Additional Info</h3>
-                    <p>
-                      Cruising the canals of Amsterdam is a must for first-time
-                      visitors to the city. This family-friendly cruise provides
-                      a personalized experience with a small boat and a maximum
-                      of 20 passengers on-board. Get to know each other as you
-                      sip drinks, tuck into snacks, and enjoy entertaining
-                      commentary from Captain Jack. Cruise around the
-                      UNESCO-listed canal ring, spot landmarks including the
-                      Rijksmuseum and the Anne Frank House, and hear fun facts
-                      and stories about Amsterdam as you discover the city.
-                    </p>
-                    <ul>
-                      <li>
-                        Fantastic views as you cruise Amsterdam’s famous canals
-                      </li>
-                      <li>
-                        Fantastic views as you cruise Amsterdam’s famous canals
-                      </li>
-                      <li>
-                        Fantastic views as you cruise Amsterdam’s famous canals
-                      </li>
-                      <li>
-                        Fantastic views as you cruise Amsterdam’s famous canals
-                      </li>
-                      <li>
-                        Fantastic views as you cruise Amsterdam’s famous canals
-                      </li>
-                    </ul>
-                    <hr />
-
-                    <h3>Cancellation Policy</h3>
-                    <p>
-                      Cruising the canals of Amsterdam is a must for first-time
-                      visitors to the city. This family-friendly cruise provides
-                      a personalized experience with a small boat and a maximum
-                      of 20 passengers on-board. Get to know each other as you
-                      sip drinks, tuck into snacks, and enjoy entertaining
-                      commentary from Captain Jack. Cruise around the
-                      UNESCO-listed canal ring, spot landmarks including the
-                      Rijksmuseum and the Anne Frank House, and hear fun facts
-                      and stories about Amsterdam as you discover the city.
-                    </p>
-                    <ul>
-                      <li>
-                        Fantastic views as you cruise Amsterdam’s famous canals
-                      </li>
-                      <li>
-                        Fantastic views as you cruise Amsterdam’s famous canals
-                      </li>
-                      <li>
-                        Fantastic views as you cruise Amsterdam’s famous canals
-                      </li>
-                      <li>
-                        Fantastic views as you cruise Amsterdam’s famous canals
-                      </li>
-                      <li>
-                        Fantastic views as you cruise Amsterdam’s famous canals
-                      </li>
-                    </ul>
+                    <OverviewParagraphs/>
                   </div>
                 </div>
               </div>
